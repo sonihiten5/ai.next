@@ -1,11 +1,75 @@
 .navbar-dark .navbar-nav .nav-link 
 {
-    color: rgb(112, 112, 112) !important;
+    color: rgb(112, 112, 112);
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
+    
 }
 .navbar-dark .navbar-nav .nav-link:hover
 {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #00d28b;
+  color: black;
+}
+.navbar-collapse
+{
+    background-color: white;
+    margin-top: 12px;
+}
+.navbar-dark .navbar-toggler
+{
+    border-color: white !important;
+    background: white;
+}
+.toggle2
+{
+    background-color: transparent !important;
+    border: none;
+}
+.new-item
+{
+    color: white !important;
+    font-weight: 800;
+}
+.nav-2
+{
+    height: 80px;
+    background-color: transparent;
+    margin-top: 100px;
+    position: relative;
+}
+.register-item
+{
+    background-color: #00d28b;
+    border-radius: 10px;
+  
+}
+.hero-img
+{
+    background-image: url(/assets/new_img/PNG/hero-img.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 600% 0%, -10% 100%);
+}
+.section-heading
+{
+    color: #00d28b;
+}
+.attend-svg
+{
+    margin-top: 80px;
+}
+@media(max-width:768px)
+{
+    .attend-svg
+{
+    margin-top: 10px;
+}
+}
+.calender a
+{
+ color: #ff6977;
+ font-weight: 500;
 }

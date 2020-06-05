@@ -127,9 +127,9 @@ nav.navbar .nav-item .dropdown.notification .nav-icon, nav.navbar .nav-item .dro
   cursor: pointer;
 }
 
-nav.navbar .nav-item .dropdown.notification .nav-icon:hover, nav.navbar .nav-item .dropdown.user-profile .nav-icon:hover {
+/* nav.navbar .nav-item .dropdown.notification .nav-icon:hover, nav.navbar .nav-item .dropdown.user-profile .nav-icon:hover {
   background-color: #343434;
-}
+} */
 
 nav.navbar .nav-item .dropdown.notification .nav-icon .badge, nav.navbar .nav-item .dropdown.user-profile .nav-icon .badge {
   position: absolute;
@@ -195,10 +195,10 @@ nav.navigation-primary .nav-item .nav-link {
   text-transform: uppercase;
   background-color: #1a1a1a;
 }
-
+/* 
 nav.navigation-primary .nav-item .nav-link:hover {
   background-color: #343434;
-}
+} */
 
 nav.navigation-primary .color-switch {
   background-color: #2e2e2e;
