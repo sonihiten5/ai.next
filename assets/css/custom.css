@@ -56,14 +56,40 @@ html{
 
 }
 
-.hero-img {
-    background-image: url(/assets/new_img/PNG/hero-img.png);
-    background-size: cover;
+.hero-bg
+{
+    position: relative;
     width: 100%;
-    min-height: 900px;
-  
+    height: 100%;
+    overflow: hidden;
+    background-position:  center;
     background-repeat: no-repeat;
+    background-size: cover;
     clip-path: polygon(0% 0%, 600% 0%, -10% 100%);
+}
+.hero-content
+{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 11;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.hero-heading
+{
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+}
+.hero-content p{
+    color: white;
+}
+.ai-text
+{
+    color: #00d28b;
+    font-weight: 700;
 }
 
 .section-heading {
@@ -566,3 +592,16 @@ a {
     border: none;
     box-shadow: 0 0 10px 1px rgb(219, 219, 219);
 }
+
+.hero-partner-img
+{
+    width: 100%;
+   
+}
+
+
+
+
+
+
+
