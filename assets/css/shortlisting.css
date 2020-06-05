@@ -1,0 +1,253 @@
+/* DATA TABLES CSS */
+.dataTables_wrapper{
+    width: 100%;
+    padding: 10px;
+}
+
+.dataTables_length .form-control{
+    padding: 0.5rem 0.9rem  !important;
+    border: 1px solid #4de94a !important;
+    height: auto !important;
+}
+
+#example_filter input[type=search]{
+    padding: 1rem 0.5rem  !important;
+    border: 1px solid #4de94a !important;
+    border-radius: 6px;
+}
+
+ .table-bordered td, .table-bordered th {
+    border: none;
+}
+
+ .table-bordered {
+    border: none;
+}
+
+table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+    color: #4de94a;
+}
+
+ .table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 0.9rem;
+}
+
+td a{
+    color: #1877F2;
+}
+
+td a:hover{
+    color: rgb(19, 101, 209);
+    text-decoration: none;
+}
+
+
+
+table thead th {
+    color: #1a1a1a;
+    background-color: transparent;
+}
+
+table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting {
+    padding-right: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.dataTables_paginate .pagination{
+        display: flex;
+    }
+
+.dataTables_paginate .pagination a {
+        margin: 0;
+    }
+
+/* TABLE WIDTH CONTROL */
+table tbody tr td:nth-child(1) {
+    width: 10%;
+}
+ table tbody tr td:nth-child(2) {
+    width:35%;
+
+}
+ table tbody tr td:nth-child(3) {
+    width: 26%;
+}
+ table tbody tr td:nth-child(4) {
+    width: 15%;
+}
+ tbody>tr>:nth-child(4){
+    text-align:center;
+}
+ tbody>tr>:nth-child(5){
+    text-align:center;
+}
+
+ tbody>tr>:nth-child(6){
+    text-align:center;
+}
+.dataTables_info,.dataTables_paginate{
+    margin-top: 5% !important;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: none;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #6EE94C ;
+    border-color: #6EE94C;
+}
+
+
+.page-item.active .page-link:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: rgb(101, 218, 68) ;
+    border-color: rgb(101, 218, 68);
+}
+
+
+/* BTN */
+.bg-orange{
+    background-color: #F28F3D;
+}
+.register {
+    padding: 12px 25px;
+    background-color: #4de94a !important;
+    border-radius: 10px;
+}
+
+
+
+/* Default Values */
+.f-default-h1{
+    font-size: 2.7rem;
+}
+
+.f-1rem{
+    font-size: 1rem;
+}
+
+.f-70p{
+    font-size: 0.8rem;
+}
+
+@media(min-width:768px){
+    .w-90{
+        width: 90%;
+    }
+}
+
+.disabled, .disabled:hover {
+    opacity: .65 !important;
+    cursor: not-allowed !important;
+}
+
+
+/* Schedule Table Arrangment */
+
+.schedule tr td:nth-child(1) {
+    width: 20%;
+}
+
+.schedule td {
+    padding: .75rem;
+    vertical-align: top;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+
+}
+
+
+/* Evaluation Table */
+.evaluation{
+    width: 100%;
+}
+
+.evaluation tbody tr td:nth-child(1) {
+    width: auto;
+}
+.evaluation tbody tr td:nth-child(2) {
+    width: auto;
+}
+.evaluation tbody tr td:nth-child(3) {
+    width: auto;
+}
+.evaluation tbody tr td:nth-child(4) {
+    width: auto;
+}
+.evaluation-footer{
+    margin-left: 48%;
+    width: 52%;
+    right: 0;
+}
+
+.evaluation-footer button{
+    z-index: 99;
+}
+
+.skip-team{
+    width: 100%;
+    position: absolute;
+    padding-left: 48%;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+
+@media(max-width: 991.98px){
+    .evaluation .border-right{
+        border-right: none !important;
+        border-bottom: 1px solid #dee2e6 ;
+    }
+    .evaluation-footer{
+        width: 100% ;
+        right: 0;
+        margin-left: 0px;
+    }
+    .skip-team{
+        width: 100%;
+        position: absolute;
+        padding-left: 5%;
+        padding-bottom: 120px;
+        background-color: #fff;
+    }
+}
+
+.evaluation .font-weight-normal{
+    font-weight: 600 !important;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    outline: none;
+    border: 3px solid gray;
+    padding: 0.5rem !important;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+    background: green;
+    
+}
+
+input[type="radio"]:checked {
+  background-color: #4de94a !important;
+}
