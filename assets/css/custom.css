@@ -1,75 +1,568 @@
-.navbar-dark .navbar-nav .nav-link 
-{
+html{
+    scroll-behavior: smooth;
+}
+.navbar-dark .navbar-nav .nav-link {
     color: rgb(112, 112, 112);
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-weight: 500;
-    
+
 }
-.navbar-dark .navbar-nav .nav-link:hover
-{
-  border-bottom: 2px solid #00d28b;
-  color: black;
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #00d28b;
+    color: black;
 }
-.navbar-collapse
-{
+
+.navbar-collapse {
     background-color: white;
     margin-top: 12px;
 }
-.navbar-dark .navbar-toggler
-{
+
+.navbar-dark .navbar-toggler {
     border-color: white !important;
     background: white;
 }
-.toggle2
-{
+
+.toggle2 {
     background-color: transparent !important;
     border: none;
 }
-.new-item
-{
+
+.new-item {
     color: white !important;
     font-weight: 800;
 }
-.nav-2
-{
+
+.nav-2 {
     height: 80px;
     background-color: transparent;
     margin-top: 100px;
     position: relative;
 }
-.register-item
-{
+
+.register-item {
     background-color: #00d28b;
-    border-radius: 10px;
-  
+    border-radius: 15px;
+
 }
-.hero-img
-{
+
+@media(max-width:992px) {
+    .register-item {
+
+        border-radius: 0px;
+
+    }
+
+}
+
+.hero-img {
     background-image: url(/assets/new_img/PNG/hero-img.png);
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 900px;
+  
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 600% 0%, -10% 100%);
 }
-.section-heading
-{
+
+.section-heading {
     color: #00d28b;
 }
-.attend-svg
-{
+
+@media(max-width:325px) {
+    .section-heading {
+        font-size: 2.3rem;
+    }
+}
+
+.attend-svg {
     margin-top: 80px;
 }
-@media(max-width:768px)
-{
-    .attend-svg
-{
+
+@media(max-width:768px) {
+    .attend-svg {
+        margin-top: 10px;
+    }
+}
+
+.calender a {
+    color: #ff6977;
+    font-weight: 500;
+}
+
+.accord-card-head {
+    background-color: #00d28b;
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.accord-card-head:hover {
+    background-color: #03bb7d;
+    color: white;
+
+    cursor: pointer;
+}
+
+.card-body {
+    border: white;
+}
+
+.time {
+    list-style-type: none;
+
+}
+
+.time li {
+    display: inline-block;
+
     margin-top: 10px;
+    font-weight: 600;
+
 }
+
+.card-img {
+    width: 100%;
 }
-.calender a
+
+.shadow-card {
+    box-shadow: 0 0 10px 1px rgb(219, 219, 219);
+    border-radius: 8px;
+}
+
+/* Blog card View */
+
+
+
+.border {
+    border: none !important;
+}
+
+.card-blog {
+    width: 400px;
+    height: 120px;
+
+
+}
+
+.card-blog-img {
+    margin-top: 6%;
+    width: 75%;
+    border-radius: 50%;
+    height: 90%;
+}
+
+.card-blog-content {
+    line-height: 18px;
+}
+
+.card-blog-content h5 {
+    margin-left: -15%;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-blog-content p {
+    font-size: 12px;
+    margin-left: -15%;
+
+    color: #2B2C31 !important;
+}
+
+.card-blog-margin {
+    margin-top: 0px;
+}
+
+
+@media(max-width:992px) {
+    .card-blog {
+        width: 300px;
+        height: 120px;
+    }
+
+    .card-blog-img {
+        margin-top: 8%;
+        width: 100%;
+        height: 80%;
+    }
+
+    .card-blog-content {
+        line-height: 18px;
+    }
+
+    .card-blog-content h5 {
+        margin-left: -12%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .card-blog-content p {
+        font-size: 10px;
+        margin-left: -12%;
+
+    }
+
+    .card-blog-margin {
+        margin-top: -20px;
+    }
+
+}
+
+@media(max-width:577px) {
+
+    .card-blog {
+        width: 300px;
+        height: 130px;
+    }
+
+    .card-blog-img {
+        margin-top: 1%;
+        width: 30%;
+        height: 90%;
+    }
+
+    .card-blog-content {
+        line-height: 18px;
+        margin-left: -64%;
+        width: 60%;
+
+    }
+
+    .card-blog-content h5 {
+        margin-left: -12%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .card-blog-content p {
+        font-size: 12px;
+        margin-left: -12%;
+
+    }
+
+    .card-blog-margin {}
+}
+
+.card-blog a {
+    color: rgb(209, 54, 64);
+    font-size: 12px;
+
+}
+
+@media(max-width:320px) {
+    .img-margin {
+        margin-left: -10px;
+    }
+}
+
+.left-margin {
+    margin-left: 50px;
+}
+
+@media(max-width:474px) {
+    .left-margin {
+        margin-left: 0px;
+    }
+}
+
+.contact-label {
+    color: #00d28b;
+    font-weight: 600;
+}
+
+.contact-btn {
+    width: 100%;
+    background-color: #00d28b;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contact-btn:hover {
+
+    background-color: #01a06b;
+
+}
+
+.contact-input {
+    border: none;
+    border-bottom: 1px solid #00d28b;
+    border-radius: 0px;
+}
+
+.contact-input:focus {
+    box-shadow: none;
+    border-bottom: 1.5px solid #00d28b;
+}
+
+.footer-icon {
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+}
+
+.footer-links a {
+    color: white;
+    margin: 10px;
+}
+
+.copyright-text {
+    color: white !important;
+
+}
+
+.copyright-text a {
+    color: white !important;
+    margin: 3px;
+
+}
+
+.close {
+    background-color: #00d28b !important;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.modal-header {
+
+    border: none;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.modal-header .close {
+    padding: 1.2rem 1rem !important;
+}
+
+
+
+
+
+
+
+
+
+.radio-contain {
+
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 10px;
+  }
+  @media(max-width:423px)
+  {
+    .radio-contain 
+    {
+        font-size: 16px;
+    }
+  }
+  @media(max-width:395px)
+  {
+    .radio-contain 
+    {
+        font-size: 14px;
+    }
+  }
+  @media(max-width:369px)
+  {
+    .radio-contain 
+    {
+        font-size: 12px;
+    }
+  }
+  @media(max-width:342px)
+  {
+    .radio-contain 
+    {
+        font-size: 10px;
+    }
+  }
+  /* Hide the browser's default radio button */
+  .radio-contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 2px solid #01a06b;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-contain:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio-contain input:checked ~ .checkmark {
+    background-color: #01a06b;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-contain input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+
+
+
+
+
+
+
+
+
+
+
+.check-contain {
+
+
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 600;
+}
+
+/* Hide the browser's default checkbox */
+.check-contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid #01a06b;
+}
+
+/* On mouse-over, add a grey background color */
+.check-contain:hover input~.checkmark1 {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-contain input:checked~.checkmark1 {
+    background-color: #01a06b;
+    border-radius: 4px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-contain input:checked~.checkmark1:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-contain .checkmark1:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+a {
+    color: #01a06b;
+}
+
+
+
+
+.reg-btn
 {
- color: #ff6977;
- font-weight: 500;
+    background-color: #00d28b;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 40px;
+}
+.reg-btn:hover
+{
+    background-color: #009e69;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 40px;
+}
+.reset-btn
+{
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    
+
+}
+@media(max-width:341px)
+{
+    .reset-btn
+{
+    margin-right: 16px;
+   margin-top: 10px;
+   
+    
+
+}
+
+}
+.contact-card
+{
+    border: none;
+    box-shadow: 0 0 10px 1px rgb(219, 219, 219);
 }
