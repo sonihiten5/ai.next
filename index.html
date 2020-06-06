@@ -26,44 +26,35 @@
     <link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
 
 
+    <style>
+
+    </style>
+
 </head>
 
 <body>
-<!-- navbar starts here -->
-    <header>
-        <nav class="navbar navbar-dark navbar-expand-lg fixed-top  " id="mainNav"
-            style="height: 80px;background-color: white;box-shadow: 0px 20px 90px 10px rgba(0, 0, 0, 0.63);">
-            <div class="container"><a class="navbar-brand" href="#page-top">
-                    <img src="/assets/new_img/SVG/AI.nxt Black.svg" alt="" style="width: 140px;height: 50px;">
-                </a><button data-toggle="collapse" data-target="#navbarResponsive"
-                    class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="/assets/new_img/SVG/Menu_2.svg" alt="" style="height: 30px;">
 
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="nav navbar-nav ml-auto text-uppercase">
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" id="nav-link-1" href="#why" >WHY
-                                ATTEND</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" id="nav-link-2"
-                                href="#agenda" >AGENDA</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" id="nav-link-3" href="#contact" >CONTACT
-                                US</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger text-white register-item" href="" data-target="#register" data-toggle="modal">REGISTER
-                                NOW</a></li>
+<!-- NAV -->
 
-                    </ul>
-                </div>
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Transparent Nav</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+</header>
 
-
-
-        
-
-
-    </header>
-    <!-- navbar starts ends here    -->
+<!--  ./NAV -->
 
 
  <!-- Hero section starts here    -->
@@ -836,27 +827,17 @@
     </script>
 
 <script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        // document.getElementById("mainNav").style.padding = "30px 10px";
-        document.getElementById("mainNav").style.backgroundColor = '#FFFFFF';
-        document.getElementById("mainNav").style.boxShadow = 'rgba(0, 0, 0, 0.63) 0px 20px 90px 10px';
-        document.getElementById("nav-link-1").style.color = 'rgb(112, 112, 112)';
-        document.getElementById("nav-link-2").style.color = 'rgb(112, 112, 112)';
-        document.getElementById("nav-link-3").style.color = 'rgb(112, 112, 112)';
-      } else {
-        // document.getElementById("mainNav").style.padding = "80px 10px";
-        document.getElementById("mainNav").style.backgroundColor = 'rgba(0, 0, 0, 0.42)';
-        document.getElementById("mainNav").style.boxShadow = 'rgba(0, 0, 0, 0.63) 0px 20px 90px 10px';
-        document.getElementById("nav-link-1").style.color = '#FFFFFF';
-        document.getElementById("nav-link-2").style.color = '#FFFFFF';
-        document.getElementById("nav-link-3").style.color = '#FFFFFF';
-      }
-    }
-    </script>
+    $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+</script>
+
 </body>
 
 
