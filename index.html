@@ -15,9 +15,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <!-- Custom CSS -->
@@ -44,11 +43,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="nav navbar-nav ml-auto text-uppercase">
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#why" >WHY
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" id="nav-link-1" href="#why" >WHY
                                 ATTEND</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" id="nav-link-2"
                                 href="#agenda" >AGENDA</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" >CONTACT
+                        <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" id="nav-link-3" href="#contact" >CONTACT
                                 US</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger text-white register-item" href="" data-target="#register" data-toggle="modal">REGISTER
                                 NOW</a></li>
@@ -70,7 +69,7 @@
  <!-- Hero section starts here    -->
     <section class="hero-section">
         <div class="hero-bg" data-bg="" >
-			<img src="/assets/new_img/PNG/hero-img.png" alt="">
+			<img class="w-100" src="/assets/new_img/PNG/hero-img.png" alt="">
         </div>
         <div class="hero-content">
 			<div class="container">
@@ -91,7 +90,7 @@
                     <div class="col-lg-10" >
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4 ">
-                                <img src="/assets/new_img/PNG/incubate.png" class="imgfluid hero-partner-img" alt="" >
+                                <img src="/assets/new_img/PNG/incubate.png" class="img-fluid w-100 hero-partner-img" alt="" >
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <img src="/assets/new_img/PNG/micro.png" class="imgfluid hero-partner-img" alt="">
@@ -834,6 +833,29 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        // document.getElementById("mainNav").style.padding = "30px 10px";
+        document.getElementById("mainNav").style.backgroundColor = '#FFFFFF';
+        document.getElementById("mainNav").style.boxShadow = 'rgba(0, 0, 0, 0.63) 0px 20px 90px 10px';
+        document.getElementById("nav-link-1").style.color = 'rgb(112, 112, 112)';
+        document.getElementById("nav-link-2").style.color = 'rgb(112, 112, 112)';
+        document.getElementById("nav-link-3").style.color = 'rgb(112, 112, 112)';
+      } else {
+        // document.getElementById("mainNav").style.padding = "80px 10px";
+        document.getElementById("mainNav").style.backgroundColor = 'rgba(0, 0, 0, 0.42)';
+        document.getElementById("mainNav").style.boxShadow = 'rgba(0, 0, 0, 0.63) 0px 20px 90px 10px';
+        document.getElementById("nav-link-1").style.color = '#FFFFFF';
+        document.getElementById("nav-link-2").style.color = '#FFFFFF';
+        document.getElementById("nav-link-3").style.color = '#FFFFFF';
+      }
+    }
     </script>
 </body>
 
