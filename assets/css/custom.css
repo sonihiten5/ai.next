@@ -132,7 +132,8 @@ html{
 
 .hero-bg
 {
-    background-image: url(assets/new_img/PNG/hero-img.png);
+    /* background-image: url(/assets/new_img/PNG/hero-img.png); */
+    background-image: url(../new_img/PNG/hero-img.png);
     position: relative;
     width: 100%;
     min-height: 800px;
@@ -146,7 +147,7 @@ html{
 {
     .hero-bg
     {
-        background-image: url(assets/new_img/PNG/hero2.png);
+        background-image: url(../new_img/PNG/hero2.png);
     }
 }
 @media(max-width:767px)
@@ -160,7 +161,7 @@ html{
 {
     .hero-bg
     {
-        background-image: url(assets/new_img/PNG/hero3.png);
+        background-image: url(../new_img/PNG/hero3.png);
         clip-path: polygon(0% 0%, 1100% 0%, -10% 100%);
     }
 }
