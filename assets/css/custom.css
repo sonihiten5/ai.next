@@ -9,17 +9,15 @@ html{
 */
 .navbar {
     transition: all 0.4s;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navbar .nav-link {
     color: #fff;
 }
 
-@media(min-width: 991.98px){
-    .fluid{
-        max-width: 95%;
-    }
-}
+
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
@@ -36,6 +34,14 @@ html{
     text-align: center;
 }
 /* Change navbar styling on scroll */
+@media(min-width: 991.98px){
+    .fluid{
+        max-width: 92%;
+    }
+    .navbar.active{
+        padding: 0;
+    }
+}
 .navbar.active {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
