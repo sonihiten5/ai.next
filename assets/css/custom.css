@@ -15,6 +15,12 @@ html{
     color: #fff;
 }
 
+@media(min-width: 991.98px){
+    .fluid{
+        max-width: 95%;
+    }
+}
+
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: #fff;
