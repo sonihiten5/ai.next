@@ -1,6 +1,75 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.nav-item
+{
+    text-align: center;
+}
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+    
+}
+.navbar.active .register-item {
+    color: #fff;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+    .navbar .navbar-brand, .navbar .register-item {
+        color: white;
+    }
+}
+}
+
+/*  */
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(112, 112, 112);
     padding-left: 1.5rem;
@@ -9,13 +78,15 @@ html{
 
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-    border-bottom: 2px solid #00d28b;
+.nav-link:hover {
+    border-bottom: 3px solid #00d28b;
     color: black;
+   
+   
 }
 
 .navbar-collapse {
-    background-color: white;
+    background-color: transparent;
     margin-top: 12px;
 }
 
@@ -43,7 +114,9 @@ html{
 
 .register-item {
     background-color: #00d28b;
-    border-radius: 15px;
+    border-radius: 8px;
+    color: white;
+    
 
 }
 
@@ -51,6 +124,7 @@ html{
     .register-item {
 
         border-radius: 0px;
+        color: white;
 
     }
 
@@ -672,3 +746,14 @@ a {
 
 }
 
+@media(max-width:500px)
+{
+    .marginresponsive
+    {
+        margin-top: 200px;
+    }
+}
+button:focus {
+    outline: 1px solid white !important;
+    outline: 5px auto white !important;
+}
